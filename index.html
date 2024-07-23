@@ -643,29 +643,5 @@ machine learning models and data cleaning</li>
 
   <!-- Template Main JS File -->
   <script src="main.js"></script>
-  <script>
-    $(document).ready(function() {
-        $('.php-email-form').submit(function(e) {
-            e.preventDefault();
-            var form = $(this);
-            var formData = form.serialize();
-            $.ajax({
-                type: 'POST',
-                url: form.attr('action'),
-                data: formData,
-                success: function(response) {
-                    if (response == 'OK') {
-                        $('.sent-message').text('Your message has been sent. Thank you!');
-                        $('.error-message').hide();
-                        form.find("input, textarea").val('');
-                    } else {
-                        $('.error-message').text('Error sending message.');
-                        $('.error-message').show();
-                    }
-                }
-            });
-        });
-    });
-  </script>
 </body>
 </html>
