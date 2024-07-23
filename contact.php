@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
     
     // Recipient email address (replace with your own email)
-    $to = 'eddd@gmail.com';
+    $to = 'allfsocial@pm.me';
     
     // Create email headers
     $headers = "From: $email\r\nReply-To: $email\r\n";
